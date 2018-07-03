@@ -1,6 +1,8 @@
 from django.conf.urls import url
-from artapp import views
+from artapp.views import *
 
 urlpatterns = [
-    url(r'', views.index),
+    url(r'^index/$', index),
+    url(r'^tags/$', add_tags),
+    url(r'^list_tags/$', list_tags),
 ]

@@ -2,6 +2,7 @@ from django.db import models
 
 
 # Create your models here.
+#小说或文章类型的模型
 class ArtTag(models.Model):
     title = models.CharField(max_length=20, verbose_name='作品类别', unique=True, blank=False, db_index=True)
 
